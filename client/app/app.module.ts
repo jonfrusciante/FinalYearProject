@@ -6,6 +6,8 @@ import { ClarityModule } from 'clarity-angular';
 import { AppComponent }  from './app.component';
 import { LoginComponent } from './login.component';
 
+import { LoginService } from './login.service';
+
 import { routing } from './app.routing';
 
 @NgModule({
@@ -14,6 +16,7 @@ import { routing } from './app.routing';
                   routing ],
   declarations: [ AppComponent,
                   LoginComponent ],
+  providers:    [ LoginService ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

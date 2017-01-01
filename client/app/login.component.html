@@ -1,8 +1,7 @@
 <div class="login-wrapper">
-     <form class="login">
+     <form (ngSubmit)="onSubmit()" class="login">
            <label class="title">
-                Company Name<span class="trademark">&#8482;</span>
-                Product Name&#174;
+                Appointment Booking System<span class="trademark">&#8482;</span>
            </label>
               <div class="login-group">
                     <div class="auth-source select">
@@ -11,14 +10,14 @@
                               <option>Administrator</option>
                       </select>
                     </div>
-                    <input class="username" type="text" id="login_username" placeholder="Username">
-                    <input class="password" type="password" id="login_password" placeholder="Password">
-                    <div class="checkbox">
+                    <input [(ngModel)]="loginAccount.username" class="username" type="text" id="login_username" placeholder="Username" required>
+                    <input [(ngModel)]="loginAccount.password" class="password" type="password" id="login_password" placeholder="Password" required>
+                    <!--<div class="checkbox">
                         <input type="checkbox" id="rememberme">
                         <label for="rememberme">
                             Remember me
                         </label>
-                    </div>
+                    </div>-->
                     <div class="error active">
                         Invalid user name or password
                     </div>
