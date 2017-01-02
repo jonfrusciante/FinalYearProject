@@ -19,6 +19,9 @@
   "homepage": "https://github.com/afreeman123/FinalYearProject#readme",
   "dependencies": {
     "body-parser": "^1.15.2",
-    "express": "^4.14.0"
+    "bson-ext": "^1.0.1",
+    "express": "^4.14.0",
+    "kerberos": "0.0.22",
+    "mongodb": "^2.2.16"
   }
 }
