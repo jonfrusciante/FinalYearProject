@@ -1,5 +1,7 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { HttpModule, JsonpModule } from '@angular/http';
 
 import { ClarityModule } from 'clarity-angular';
 
@@ -13,6 +15,9 @@ import { routing } from './app.routing';
 @NgModule({
   imports:      [ BrowserModule,
                   ClarityModule,
+                  FormsModule,
+                  HttpModule,
+                  JsonpModule,
                   routing ],
   declarations: [ AppComponent,
                   LoginComponent ],
