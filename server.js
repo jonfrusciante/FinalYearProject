@@ -6,10 +6,10 @@ var url = 'mongodb://localhost:27017/myproject';
 
 var insertDocuments = function(db, callback) {
   // Get the documents collection
-  var collection = db.collection('documents');
+  var collection = db.collection('accounts');
   // Insert some documents
   collection.insertMany([
-    {a : 1}, {a : 2}, {a : 3}
+    {username : 'redsky95', password: 'password'}, {username : '06freemana', password: 'password'}, {username : 'freemanator95', password: 'password'}
   ], function(err, result) {
     assert.equal(err, null);
     assert.equal(3, result.result.n);

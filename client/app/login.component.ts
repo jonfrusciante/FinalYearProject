@@ -18,8 +18,12 @@ export class LoginComponent {
     //this.submitted = true;
     this.loginService.checkUser(this.loginAccount.username, this.loginAccount.password)
                       .subscribe(
-                        valid => this.submitted = valid,
+                        valid => {
+                          this.submitted = valid;
+                          console.log(this.submitted);
+                          },
                       error => this.errorMessage = <any>error
                       );
+    
   }
 }

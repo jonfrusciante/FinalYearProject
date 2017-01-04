@@ -33,6 +33,7 @@ export class LoginService {
 
     private extractData(res: Response) {
         let body = res.json();
-        return body.data || { };
+        console.log('response: ' + body);
+        return body;
     }
 }
